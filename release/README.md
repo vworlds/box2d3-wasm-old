@@ -9,7 +9,7 @@ Until the package is in a registry, install it straight from this repository, un
 vecs imports:
 
 ```bash
-npm install "box2d3-wasm@https://github.com/vworlds/box2d3-wasm/raw/<commit>/release/vworlds-box2d3-wasm-5.2.0-vworlds.1.tgz"
+npm install "box2d3-wasm@https://github.com/vworlds/box2d3-wasm/raw/5cf5485d42988429e9f9b396af5fa9549bcb0fee/release/vworlds-box2d3-wasm-5.2.0-vworlds.1.tgz"
 ```
 
 Once it is published to npm (see `REPORT.md` → "Publishing"), use the alias instead:

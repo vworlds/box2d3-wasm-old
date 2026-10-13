@@ -233,10 +233,11 @@ What is ready:
 - **Tarball:** [`release/vworlds-box2d3-wasm-5.2.0-vworlds.1.tgz`](release/), `npm pack` of the
   audited clean-checkout build (24 files, 470.5 kB, SHA-256 in `release/SHA256SUMS`). It installs
   and runs under both the scoped name and the `box2d3-wasm` alias (smoke test: fast-path values
-  equal embind's). It can be installed today from this repository:
+  equal embind's). It can be installed today from this repository (verified: npm resolves it,
+  `integrity sha512-Q4HnvlSjd28u…`, and the fast path runs):
 
   ```bash
-  npm install "box2d3-wasm@https://github.com/vworlds/box2d3-wasm/raw/{{RELEASE_COMMIT}}/release/vworlds-box2d3-wasm-5.2.0-vworlds.1.tgz"
+  npm install "box2d3-wasm@https://github.com/vworlds/box2d3-wasm/raw/5cf5485d42988429e9f9b396af5fa9549bcb0fee/release/vworlds-box2d3-wasm-5.2.0-vworlds.1.tgz"
   ```
 
 - **To publish to npm** (needs publish rights on the `@vworlds` scope):
