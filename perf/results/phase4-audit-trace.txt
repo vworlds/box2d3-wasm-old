@@ -1,0 +1,7 @@
+drift500 per-step trace: stock 2f08129e final 2f08129e IDENTICAL
+drift2000 per-step trace: stock 1d76a561 final 1d76a561 IDENTICAL
+drift10000 per-step trace: stock bd957614 final bd957614 IDENTICAL
+contact per-step trace: stock 322669a9 final 322669a9 IDENTICAL
+worlds25x19 per-step trace: stock 68c264b3 final 68c264b3 IDENTICAL
+rest2000 per-step trace: stock 78082b5b final 78082b5b IDENTICAL
+drive500 per-step trace: stock db7fa498 final db7fa498 IDENTICAL

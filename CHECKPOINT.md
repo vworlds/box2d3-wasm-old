@@ -10,7 +10,7 @@ box2d3-wasm **5.2.0** (`ee2a63b`). Reference consumer: `vworlds/vecs` (read-only
 | 1. Setup and baseline | **done** (BREAKPOINT A) |
 | 2. Plan and API design | **done** (BREAKPOINT B) |
 | 3. Iterate | **done** (BREAKPOINT C): 9 rounds, stopped after R8 and R9 each gained < 5% |
-| 4. Final analysis | not started |
+| 4. Final analysis | **done**: audit passed; report, API reference, patches, migration guide written; release tarball ready; registry publish pending credentials |
 
 Hard rule for every later phase: results stay bit-identical to stock 5.2.0. Proof per build: the
 seven scene checksums (five from Phase 1, two added in Phase 2), the fast-path differential test,
@@ -850,17 +850,80 @@ Fork-side cost left: `b2x_World_ExportMoves` ≈ 1.8% (≈ 15 ns/body: per-body 
 type and velocity lookups through Box2D's public API). Reading Box2D's internal body arrays
 directly would halve it, at the price of depending on private headers. Not done.
 
-## Next steps (Phase 4, after go-ahead)
+---
 
-1. Audit from a clean checkout of the fork: rebuild (both flavours, Release), re-run the
-   differential test, all checksums (scratch adapter rebuilt from `perf/adapter/*.patch` and
-   unmodified vecs), and the three vecs suites in both checkouts.
-2. Final table with noise (re-run stock vs final in one session if the audit build differs).
-3. API reference with TypeScript declarations (`docs/fastpath.md`), patch documentation (fork
-   vs upstream box2d3-wasm, Box2D patch), migration guide for vecs (each call site, today →
-   fast path, order, expected gain per step), left-on-the-table list.
-4. Publish `@vworlds/box2d3-wasm` (check npm credentials; fallback GitHub Packages or a release
-   tarball) and report the version to VecsMaster.
+## Phase 4: final analysis and hand-back
+
+Deliverables:
+- [REPORT.md](REPORT.md): the final tables (two hosts), proof, rounds, remaining cost, left on
+  the table, publishing.
+- [box2d3-wasm/docs/fastpath.md](box2d3-wasm/docs/fastpath.md): the API reference; its example
+  typechecks and runs.
+- [PATCHES.md](PATCHES.md): changes vs upstream and how to rebase.
+- [docs/vecs-migration.md](docs/vecs-migration.md): each call site, today → fast path, order,
+  gain.
+- `release/`: the packed tarball.
+
+Package: `@vworlds/box2d3-wasm` **5.2.0-vworlds.1**.
+
+### 4.1 Audit from a clean checkout (commit `f72cf60`)
+
+- Fresh `git clone` of the branch, submodules, `npm ci`, both flavours built from scratch (the
+  Box2D patch applied, LTO). `gen_fastpath.py --check`: up to date.
+- Fresh vecs checkouts via `perf/setup-vecs-checkout.sh` (unmodified at `2d58dd7`; scratch =
+  `2d58dd7` + `perf/adapter/0001…0007`). Both build; the scratch adapter typechecks against the
+  new declarations.
+- `perf/prove.sh`: **PROOF OK**
+  - differential test: 5,473,096 values equal on deluxe and compat;
+  - checksums: 14/14 (scratch adapter and unmodified vecs);
+  - vecs suites: 6/6 runs (vecs-physics 536, vecs-phaser-server 154, vecs-phaser 119, in both
+    checkouts).
+
+  Log: `perf/results/phase4-audit-prove.log`.
+- vecs's own `bench/physics-pose-out.ts`, unmodified, on the audited build: N=500 `11c76fa7`,
+  N=2,000 `a66a94ee`, with the scratch adapter and with unmodified vecs.
+- **Per-step traces, stock vs final, identical in all seven scenes** (`BENCH_TRACE=1`;
+  `perf/results/phase4-audit-trace.txt`): drift500 `2f08129e`, drift2000 `1d76a561`,
+  drift10000 `bd957614`, contact `322669a9`, worlds25x19 `68c264b3`, rest2000 `78082b5b`,
+  drive500 `db7fa498`.
+- `npm pack` of the audited build → `release/vworlds-box2d3-wasm-5.2.0-vworlds.1.tgz` (sha256
+  `dbec27a1…`). Installed into a throwaway project under the scoped name and a `box2d3-wasm`
+  alias; the fast path runs and equals embind.
+
+### 4.2 The host changed during the audit
+
+The container rebooted onto a different machine (host B) at about 05:23, before the audit build.
+On host B the same final code runs relatively slower: its remaining cost is memory-latency-bound
+vecs ECS work. Stock runs 1.3–1.4× slower on host B, final 1.2–2.3× slower; Box2D's share of the
+final tick fell from 21% to 13%. A control run shows the audited build equals the Phase 3 build
+within noise on host B (`perf/results/phase4-control.*`).
+
+| | host A (Phases 1–3, Phase 3 final run) | host B (audit, 10 rounds for drift / 5 for the rest) |
+|---|---|---|
+| whole tick drift 500 / 2,000 / 10,000 | 10.6× / 10.1× / 5.2× | 8.3× / 6.4× / 4.1× |
+| copy-out drift 500 / 2,000 / 10,000 | 14.2× / 12.5× / 6.0× | 10.2× / 7.3× / 4.5× |
+| contact / 25 worlds / rest / drive (tick) | 3.7× / 6.1× / 22.4× / 6.3× | 2.4× / 7.0× / 13.7× / 6.7× |
+
+Targets: on host A every floor is met. On host B the copy-out floor is missed at 10,000 bodies
+(4.5×); there the remaining copy-out is ≈ 98% vecs and adapter JavaScript.
+
+### 4.3 Publishing state
+
+Not published to a registry: no npm credentials in this session, and Actions are disabled on
+the fork. Ready:
+- the tarball in `release/`;
+- `npm publish release/vworlds-box2d3-wasm-5.2.0-vworlds.1.tgz` for anyone with `@vworlds` rights;
+- `.github/workflows/publish-vworlds.yml` (needs Actions enabled, the workflow on the default
+  branch, and `NPM_TOKEN` for npmjs.org);
+- an install-from-GitHub URL in `REPORT.md`.
+
+### 4.4 Next steps (for whoever continues)
+
+1. Publish (above) and report the version to VecsMaster. The vecs-side adapter change, its
+   review and its release happen in vecs, following `docs/vecs-migration.md` and
+   `perf/adapter/*.patch`.
+2. Optional: re-run `perf/bench/run.mjs` on the production server type. Speedups depend on the
+   host (see 4.2); results do not.
 
 ---
 

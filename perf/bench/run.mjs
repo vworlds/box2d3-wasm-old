@@ -26,7 +26,10 @@ args.forEach((arg, i) => {
   }
 });
 const rounds = Number(opt("rounds", 3));
-const scenes = opt("scenes", "drift500,drift2000,drift10000,contact,worlds25x19").split(",");
+const scenes = opt(
+  "scenes",
+  "drift500,drift2000,drift10000,contact,worlds25x19,rest2000,drive500"
+).split(",");
 const alloc = args.includes("--alloc");
 const out = opt("out");
 if (out) mkdirSync(dirname(resolve(out)), { recursive: true });

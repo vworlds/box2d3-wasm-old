@@ -1,0 +1,142 @@
+r0 drift500     stock      tick 12691.5 pose 11963.9 step 443 alloc -1 11c76fa7
+r0 drift500     final      tick 1053.8 pose 795 step 206.3 alloc -1 11c76fa7
+r0 drift2000    stock      tick 11906.4 pose 11467.4 step 362 alloc -1 a66a94ee
+r0 drift2000    final      tick 3457.6 pose 3075.5 step 324.2 alloc -1 a66a94ee
+r0 drift10000   stock      tick 11772.1 pose 11369.6 step 381.5 alloc -1 70623967
+r0 drift10000   final      tick 2782.4 pose 2422.6 step 348 alloc -1 70623967
+r0 contact      stock      tick 18298.7 pose 14006.4 step 3512.5 alloc -1 5db7f953
+r0 contact      final      tick 7323.6 pose 3832.3 step 3097.9 alloc -1 5db7f953
+r0 worlds25x19  stock      tick 15776.6 pose 11517 step 1854.5 alloc -1 a8a0671e
+r0 worlds25x19  final      tick 2568.6 pose 1217 step 369.3 alloc -1 a8a0671e
+r0 rest2000     stock      tick 9413.8 pose 9158.1 step 197 alloc -1 17fc310b
+r0 rest2000     final      tick 675.6 pose 513.8 step 135.2 alloc -1 17fc310b
+r0 drive500     stock      tick 15600.5 pose 11372.8 step 816.2 alloc -1 fd7cc876
+r0 drive500     final      tick 2329.3 pose 1276.7 step 552.7 alloc -1 fd7cc876
+r1 drift2000    final      tick 3147.4 pose 2768.6 step 325.4 alloc -1 a66a94ee
+r1 drift2000    stock      tick 10992.5 pose 10577.9 step 345.8 alloc -1 a66a94ee
+r1 drift10000   final      tick 2777.6 pose 2416.9 step 348.9 alloc -1 70623967
+r1 drift10000   stock      tick 10974.6 pose 10582.3 step 371.3 alloc -1 70623967
+r1 contact      final      tick 6176.8 pose 3013.8 step 2821.1 alloc -1 5db7f953
+r1 contact      stock      tick 15349.9 pose 11541.8 step 3144.6 alloc -1 5db7f953
+r1 worlds25x19  final      tick 1760.2 pose 783.6 step 253.5 alloc -1 a8a0671e
+r1 worlds25x19  stock      tick 13589.7 pose 9889.8 step 1599.8 alloc -1 a8a0671e
+r1 rest2000     final      tick 422.4 pose 297.2 step 109.5 alloc -1 17fc310b
+r1 rest2000     stock      tick 9241.4 pose 9001.2 step 187.4 alloc -1 17fc310b
+r1 drive500     final      tick 2409.9 pose 1359.7 step 553.2 alloc -1 fd7cc876
+r1 drive500     stock      tick 16068.1 pose 11617.4 step 857.4 alloc -1 fd7cc876
+r1 drift500     final      tick 950 pose 710.5 step 190.5 alloc -1 11c76fa7
+r1 drift500     stock      tick 9374.9 pose 8809.2 step 367.7 alloc -1 11c76fa7
+r2 drift10000   stock      tick 11051.5 pose 10667.1 step 365.1 alloc -1 70623967
+r2 drift10000   final      tick 2881.7 pose 2528.2 step 342.1 alloc -1 70623967
+r2 contact      stock      tick 14913.1 pose 11218.3 step 3060.5 alloc -1 5db7f953
+r2 contact      final      tick 6404.2 pose 3178.8 step 2871.1 alloc -1 5db7f953
+r2 worlds25x19  stock      tick 13497.4 pose 9821.3 step 1591.4 alloc -1 a8a0671e
+r2 worlds25x19  final      tick 1932.4 pose 878.3 step 295.9 alloc -1 a8a0671e
+r2 rest2000     stock      tick 9425.1 pose 9163.7 step 196.4 alloc -1 17fc310b
+r2 rest2000     final      tick 711.3 pose 549.8 step 138 alloc -1 17fc310b
+r2 drive500     stock      tick 13764.8 pose 10025.1 step 792.4 alloc -1 fd7cc876
+r2 drive500     final      tick 2459.5 pose 1369.1 step 559.8 alloc -1 fd7cc876
+r2 drift500     stock      tick 12063.3 pose 11364.1 step 425.9 alloc -1 11c76fa7
+r2 drift500     final      tick 1628.4 pose 1267.7 step 278.9 alloc -1 11c76fa7
+r2 drift2000    stock      tick 12563.6 pose 12131.7 step 358.4 alloc -1 a66a94ee
+r2 drift2000    final      tick 2500.1 pose 2157.8 step 297.6 alloc -1 a66a94ee
+r3 contact      final      tick 6540.2 pose 3211.8 step 2942.3 alloc -1 5db7f953
+r3 contact      stock      tick 16231.5 pose 12382.1 step 3177.8 alloc -1 5db7f953
+r3 worlds25x19  final      tick 2258.7 pose 1037.1 step 331.4 alloc -1 a8a0671e
+r3 worlds25x19  stock      tick 14519.1 pose 10631.2 step 1670.1 alloc -1 a8a0671e
+r3 rest2000     final      tick 847.2 pose 673.1 step 146.9 alloc -1 17fc310b
+r3 rest2000     stock      tick 8452.8 pose 8216.4 step 183 alloc -1 17fc310b
+r3 drive500     final      tick 2221.6 pose 1238.6 step 532.9 alloc -1 fd7cc876
+r3 drive500     stock      tick 17611.8 pose 12715.7 step 921.2 alloc -1 fd7cc876
+r3 drift500     final      tick 1153.4 pose 888.3 step 207.1 alloc -1 11c76fa7
+r3 drift500     stock      tick 12814.7 pose 12120.9 step 460.6 alloc -1 11c76fa7
+r3 drift2000    final      tick 1871.8 pose 1567.9 step 271.6 alloc -1 a66a94ee
+r3 drift2000    stock      tick 10838.9 pose 10445.4 step 330.4 alloc -1 a66a94ee
+r3 drift10000   final      tick 2874 pose 2509.7 step 352.2 alloc -1 70623967
+r3 drift10000   stock      tick 11502.4 pose 11125.6 step 357.2 alloc -1 70623967
+r4 worlds25x19  stock      tick 13475.1 pose 9758.4 step 1536.3 alloc -1 a8a0671e
+r4 worlds25x19  final      tick 1918.3 pose 858.9 step 287 alloc -1 a8a0671e
+r4 rest2000     stock      tick 9132 pose 8889.2 step 188.2 alloc -1 17fc310b
+r4 rest2000     final      tick 626.8 pose 463.6 step 140.3 alloc -1 17fc310b
+r4 drive500     stock      tick 16522.3 pose 11991 step 840.1 alloc -1 fd7cc876
+r4 drive500     final      tick 2605 pose 1436.6 step 585 alloc -1 fd7cc876
+r4 drift500     stock      tick 10579.6 pose 9973.6 step 392.3 alloc -1 11c76fa7
+r4 drift500     final      tick 1275.4 pose 972.2 step 230.7 alloc -1 11c76fa7
+r4 drift2000    stock      tick 12369.6 pose 11937.9 step 356.7 alloc -1 a66a94ee
+r4 drift2000    final      tick 3454.1 pose 3070.2 step 330.4 alloc -1 a66a94ee
+r4 drift10000   stock      tick 11058.4 pose 10674.9 step 364.4 alloc -1 70623967
+r4 drift10000   final      tick 3023.3 pose 2653.8 step 356.2 alloc -1 70623967
+r4 contact      stock      tick 15998 pose 12077.2 step 3252.6 alloc -1 5db7f953
+r4 contact      final      tick 6974.9 pose 3535.9 step 3054.6 alloc -1 5db7f953
+
+scene        variant     metric   median     min       max     spread  checksums
+drift500     stock      tickNs    12063.3    9374.9   12814.7   36.7%  11c76fa7
+drift500     stock      poseNs    11364.1    8809.2   12120.9   37.6%  
+drift500     stock      stepNs      425.9     367.7     460.6   25.3%  
+drift500     stock      eventsNs    118.6      96.3     132.2   37.3%  
+drift500     stock      otherNs     110.1      95.7     144.8   51.3%  
+drift500     final      tickNs     1153.4     950.0    1628.4   71.4%  11c76fa7
+drift500     final      poseNs      888.3     710.5    1267.7   78.4%  
+drift500     final      stepNs      207.1     190.5     278.9   46.4%  
+drift500     final      eventsNs     13.1      11.8      18.0   52.5%  
+drift500     final      otherNs      42.3      35.1      60.5   72.4%  
+drift2000    stock      tickNs    11906.4   10838.9   12563.6   15.9%  a66a94ee
+drift2000    stock      poseNs    11467.4   10445.4   12131.7   16.1%  
+drift2000    stock      stepNs      356.7     330.4     362.0    9.6%  
+drift2000    stock      eventsNs     43.1      36.2      45.7   26.2%  
+drift2000    stock      otherNs      28.7      25.8      30.1   16.7%  
+drift2000    final      tickNs     3147.4    1871.8    3457.6   84.7%  a66a94ee
+drift2000    final      poseNs     2768.6    1567.9    3075.5   96.2%  
+drift2000    final      stepNs      324.2     271.6     330.4   21.6%  
+drift2000    final      eventsNs     16.1      10.2      19.8   94.1%  
+drift2000    final      otherNs      34.3      21.3      37.2   74.6%  
+drift10000   stock      tickNs    11058.4   10974.6   11772.1    7.3%  70623967
+drift10000   stock      poseNs    10674.9   10582.3   11369.6    7.4%  
+drift10000   stock      stepNs      365.1     357.2     381.5    6.8%  
+drift10000   stock      eventsNs     11.7      11.0      12.1   10.0%  
+drift10000   stock      otherNs       7.9       7.8       9.1   16.7%  
+drift10000   final      tickNs     2874.0    2777.6    3023.3    8.8%  70623967
+drift10000   final      poseNs     2509.7    2416.9    2653.8    9.8%  
+drift10000   final      stepNs      348.9     342.1     356.2    4.1%  
+drift10000   final      eventsNs      4.0       3.8       4.9   28.9%  
+drift10000   final      otherNs       7.6       7.3       8.1   11.0%  
+contact      stock      tickNs    15998.0   14913.1   18298.7   22.7%  5db7f953
+contact      stock      poseNs    12077.2   11218.3   14006.4   24.9%  
+contact      stock      stepNs     3177.8    3060.5    3512.5   14.8%  
+contact      stock      eventsNs    587.9     553.2     686.2   24.0%  
+contact      stock      otherNs      78.6      66.2      90.2   36.3%  
+contact      final      tickNs     6540.2    6176.8    7323.6   18.6%  5db7f953
+contact      final      poseNs     3211.8    3013.8    3832.3   27.2%  
+contact      final      stepNs     2942.3    2821.1    3097.9    9.8%  
+contact      final      eventsNs    302.0     286.5     327.6   14.3%  
+contact      final      otherNs      58.0      52.8      81.2   53.8%  
+worlds25x19  stock      tickNs    13589.7   13475.1   15776.6   17.1%  a8a0671e
+worlds25x19  stock      poseNs     9889.8    9758.4   11517.0   18.0%  
+worlds25x19  stock      stepNs     1599.8    1536.3    1854.5   20.7%  
+worlds25x19  stock      eventsNs    429.1     418.5     527.1   25.9%  
+worlds25x19  stock      otherNs    1625.9    1536.7    1742.6   13.4%  
+worlds25x19  final      tickNs     1932.4    1760.2    2568.6   45.9%  a8a0671e
+worlds25x19  final      poseNs      878.3     783.6    1217.0   55.3%  
+worlds25x19  final      stepNs      295.9     253.5     369.3   45.7%  
+worlds25x19  final      eventsNs     50.5      41.9      65.7   56.8%  
+worlds25x19  final      otherNs     676.9     637.7     856.6   34.3%  
+rest2000     stock      tickNs     9241.4    8452.8    9425.1   11.5%  17fc310b
+rest2000     stock      poseNs     9001.2    8216.4    9163.7   11.5%  
+rest2000     stock      stepNs      188.2     183.0     197.0    7.7%  
+rest2000     stock      eventsNs     25.2      24.4      27.0   10.7%  
+rest2000     stock      otherNs      29.1      27.0      37.4   38.5%  
+rest2000     final      tickNs      675.6     422.4     847.2  100.6%  17fc310b
+rest2000     final      poseNs      513.8     297.2     673.1  126.5%  
+rest2000     final      stepNs      138.0     109.5     146.9   34.2%  
+rest2000     final      eventsNs      6.5       3.9       7.9  102.6%  
+rest2000     final      otherNs      16.5      11.3      19.1   69.0%  
+drive500     stock      tickNs    16068.1   13764.8   17611.8   27.9%  fd7cc876
+drive500     stock      poseNs    11617.4   10025.1   12715.7   26.8%  
+drive500     stock      stepNs      840.1     792.4     921.2   16.3%  
+drive500     stock      eventsNs    123.5     111.0     178.2   60.5%  
+drive500     stock      otherNs     136.2     117.6     165.5   40.7%  
+drive500     final      tickNs     2409.9    2221.6    2605.0   17.3%  fd7cc876
+drive500     final      poseNs     1359.7    1238.6    1436.6   16.0%  
+drive500     final      stepNs      553.2     532.9     585.0    9.8%  
+drive500     final      eventsNs     18.2      17.3      22.2   28.3%  
+drive500     final      otherNs      53.0      48.6      62.4   28.4%  

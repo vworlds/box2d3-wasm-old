@@ -1,0 +1,122 @@
+r0 drift500     stock      tick 12152.2 pose 11499.2 step 426.7 alloc -1 11c76fa7
+r0 drift500     audit      tick 1482 pose 1226.1 step 204.4 alloc -1 11c76fa7
+r0 drift500     phase3     tick 1204.2 pose 913.4 step 231.1 alloc -1 11c76fa7
+r0 drift2000    stock      tick 12750.7 pose 12288.9 step 380.1 alloc -1 a66a94ee
+r0 drift2000    audit      tick 3264.5 pose 2869.1 step 342.3 alloc -1 a66a94ee
+r0 drift2000    phase3     tick 2554.4 pose 2198.5 step 308.2 alloc -1 a66a94ee
+r0 drift10000   stock      tick 11377.9 pose 10993.5 step 364.8 alloc -1 70623967
+r0 drift10000   audit      tick 2801 pose 2452.9 step 335 alloc -1 70623967
+r0 drift10000   phase3     tick 3108.2 pose 2712.5 step 382.6 alloc -1 70623967
+r0 contact      stock      tick 18246.5 pose 13822.2 step 3648.5 alloc -1 5db7f953
+r0 contact      audit      tick 6151.1 pose 2976.6 step 2812.2 alloc -1 5db7f953
+r0 contact      phase3     tick 6205 pose 3142.7 step 2703.3 alloc -1 5db7f953
+r1 drift2000    phase3     tick 2472.3 pose 2129.6 step 298.5 alloc -1 a66a94ee
+r1 drift2000    audit      tick 2774.7 pose 2438.9 step 293.1 alloc -1 a66a94ee
+r1 drift2000    stock      tick 12013.9 pose 11583.3 step 355.6 alloc -1 a66a94ee
+r1 drift10000   phase3     tick 2724.9 pose 2368 step 343.4 alloc -1 70623967
+r1 drift10000   audit      tick 3148.5 pose 2759.3 step 374.7 alloc -1 70623967
+r1 drift10000   stock      tick 10259.3 pose 9886.2 step 353.1 alloc -1 70623967
+r1 contact      phase3     tick 7160 pose 3601 step 3119.5 alloc -1 5db7f953
+r1 contact      audit      tick 7046.1 pose 3531.3 step 3117.1 alloc -1 5db7f953
+r1 contact      stock      tick 14967.8 pose 11104.4 step 3168.1 alloc -1 5db7f953
+r1 drift500     phase3     tick 1115 pose 834.9 step 220.1 alloc -1 11c76fa7
+r1 drift500     audit      tick 1337 pose 1030.6 step 231.1 alloc -1 11c76fa7
+r1 drift500     stock      tick 10939.7 pose 10309.2 step 393.1 alloc -1 11c76fa7
+r2 drift10000   stock      tick 10533 pose 10151 step 360.6 alloc -1 70623967
+r2 drift10000   audit      tick 2685.4 pose 2363.3 step 311.4 alloc -1 70623967
+r2 drift10000   phase3     tick 2413.6 pose 2090.2 step 311.5 alloc -1 70623967
+r2 contact      stock      tick 15697.3 pose 11943.9 step 3125.7 alloc -1 5db7f953
+r2 contact      audit      tick 6489.5 pose 3230.3 step 2896.5 alloc -1 5db7f953
+r2 contact      phase3     tick 5305.1 pose 2474.8 step 2524.6 alloc -1 5db7f953
+r2 drift500     stock      tick 9635.3 pose 9084.3 step 369.8 alloc -1 11c76fa7
+r2 drift500     audit      tick 1100.8 pose 827.2 step 218.2 alloc -1 11c76fa7
+r2 drift500     phase3     tick 980.7 pose 729.7 step 199.8 alloc -1 11c76fa7
+r2 drift2000    stock      tick 11481.8 pose 11073 step 342.1 alloc -1 a66a94ee
+r2 drift2000    audit      tick 2288.3 pose 1963.4 step 290.1 alloc -1 a66a94ee
+r2 drift2000    phase3     tick 1627.3 pose 1335.9 step 259.3 alloc -1 a66a94ee
+r3 contact      phase3     tick 5724.8 pose 2737.2 step 2654.3 alloc -1 5db7f953
+r3 contact      audit      tick 5378.1 pose 2255 step 2764.8 alloc -1 5db7f953
+r3 contact      stock      tick 17166.8 pose 13167.6 step 3331.2 alloc -1 5db7f953
+r3 drift500     phase3     tick 998.6 pose 738.2 step 208.1 alloc -1 11c76fa7
+r3 drift500     audit      tick 1075.6 pose 819.3 step 197.1 alloc -1 11c76fa7
+r3 drift500     stock      tick 9620.6 pose 9040.2 step 385.4 alloc -1 11c76fa7
+r3 drift2000    phase3     tick 1773.2 pose 1493.9 step 247.8 alloc -1 a66a94ee
+r3 drift2000    audit      tick 3417.4 pose 3005.7 step 357.2 alloc -1 a66a94ee
+r3 drift2000    stock      tick 11879.1 pose 11455.2 step 351.8 alloc -1 a66a94ee
+r3 drift10000   phase3     tick 2357.9 pose 2043.5 step 303 alloc -1 70623967
+r3 drift10000   audit      tick 2607.5 pose 2286.3 step 309.3 alloc -1 70623967
+r3 drift10000   stock      tick 10002.4 pose 9645.6 step 338.1 alloc -1 70623967
+r4 drift500     stock      tick 10754.2 pose 10154 step 397.4 alloc -1 11c76fa7
+r4 drift500     audit      tick 1066.3 pose 794.6 step 212.5 alloc -1 11c76fa7
+r4 drift500     phase3     tick 1026.3 pose 777.7 step 193.5 alloc -1 11c76fa7
+r4 drift2000    stock      tick 10994.5 pose 10595.8 step 333.1 alloc -1 a66a94ee
+r4 drift2000    audit      tick 1885.6 pose 1591.4 step 259.4 alloc -1 a66a94ee
+r4 drift2000    phase3     tick 2177.4 pose 1847.8 step 295.7 alloc -1 a66a94ee
+r4 drift10000   stock      tick 10577.4 pose 10197.6 step 360.8 alloc -1 70623967
+r4 drift10000   audit      tick 2517.2 pose 2186.8 step 319.2 alloc -1 70623967
+r4 drift10000   phase3     tick 3093.8 pose 2714.5 step 363.2 alloc -1 70623967
+r4 contact      stock      tick 17351.2 pose 13229.8 step 3390.7 alloc -1 5db7f953
+r4 contact      audit      tick 8372.9 pose 4483.2 step 3433.1 alloc -1 5db7f953
+r4 contact      phase3     tick 5692.6 pose 2434.6 step 2873.9 alloc -1 5db7f953
+
+scene        variant     metric   median     min       max     spread  checksums
+drift500     stock      tickNs    10754.2    9620.6   12152.2   26.3%  11c76fa7
+drift500     stock      poseNs    10154.0    9040.2   11499.2   27.2%  
+drift500     stock      stepNs      393.1     369.8     426.7   15.4%  
+drift500     stock      eventsNs    101.4      92.4     115.7   25.2%  
+drift500     stock      otherNs      97.5      85.1     116.9   37.4%  
+drift500     audit      tickNs     1100.8    1066.3    1482.0   39.0%  11c76fa7
+drift500     audit      poseNs      827.2     794.6    1226.1   54.3%  
+drift500     audit      stepNs      212.5     197.1     231.1   17.3%  
+drift500     audit      eventsNs     13.5      13.0      18.2   40.0%  
+drift500     audit      otherNs      42.3      36.4      54.3   49.2%  
+drift500     phase3     tickNs     1026.3     980.7    1204.2   22.8%  11c76fa7
+drift500     phase3     poseNs      777.7     729.7     913.4   25.2%  
+drift500     phase3     stepNs      208.1     193.5     231.1   19.4%  
+drift500     phase3     eventsNs     13.3      11.8      15.1   28.0%  
+drift500     phase3     otherNs      41.1      35.5      42.3   19.2%  
+drift2000    stock      tickNs    11879.1   10994.5   12750.7   16.0%  a66a94ee
+drift2000    stock      poseNs    11455.2   10595.8   12288.9   16.0%  
+drift2000    stock      stepNs      351.8     333.1     380.1   14.1%  
+drift2000    stock      eventsNs     42.3      37.4      47.7   27.5%  
+drift2000    stock      otherNs      28.4      26.9      32.3   20.1%  
+drift2000    audit      tickNs     2774.7    1885.6    3417.4   81.2%  a66a94ee
+drift2000    audit      poseNs     2438.9    1591.4    3005.7   88.9%  
+drift2000    audit      stepNs      293.1     259.4     357.2   37.7%  
+drift2000    audit      eventsNs     14.8       9.9      16.5   66.7%  
+drift2000    audit      otherNs      26.8      23.1      36.5   58.0%  
+drift2000    phase3     tickNs     2177.4    1627.3    2554.4   57.0%  a66a94ee
+drift2000    phase3     poseNs     1847.8    1335.9    2198.5   64.6%  
+drift2000    phase3     stepNs      295.7     247.8     308.2   24.4%  
+drift2000    phase3     eventsNs     11.2       8.2      13.6   65.9%  
+drift2000    phase3     otherNs      23.1      21.6      32.8   51.9%  
+drift10000   stock      tickNs    10533.0   10002.4   11377.9   13.8%  70623967
+drift10000   stock      poseNs    10151.0    9645.6   10993.5   14.0%  
+drift10000   stock      stepNs      360.6     338.1     364.8    7.9%  
+drift10000   stock      eventsNs     11.2      11.0      12.0    9.1%  
+drift10000   stock      otherNs       7.7       7.5       9.1   21.3%  
+drift10000   audit      tickNs     2685.4    2517.2    3148.5   25.1%  70623967
+drift10000   audit      poseNs     2363.3    2186.8    2759.3   26.2%  
+drift10000   audit      stepNs      319.2     309.3     374.7   21.1%  
+drift10000   audit      eventsNs      4.1       3.7       4.6   24.3%  
+drift10000   audit      otherNs       7.6       6.7       9.8   46.3%  
+drift10000   phase3     tickNs     2724.9    2357.9    3108.2   31.8%  70623967
+drift10000   phase3     poseNs     2368.0    2043.5    2714.5   32.8%  
+drift10000   phase3     stepNs      343.4     303.0     382.6   26.3%  
+drift10000   phase3     eventsNs      4.0       3.5       5.1   45.7%  
+drift10000   phase3     otherNs       8.9       7.7      10.6   37.7%  
+contact      stock      tickNs    17166.8   14967.8   18246.5   21.9%  5db7f953
+contact      stock      poseNs    13167.6   11104.4   13822.2   24.5%  
+contact      stock      stepNs     3331.2    3125.7    3648.5   16.7%  
+contact      stock      eventsNs    620.3     561.9     695.9   23.8%  
+contact      stock      otherNs      72.3      63.1      85.5   35.5%  
+contact      audit      tickNs     6489.5    5378.1    8372.9   55.7%  5db7f953
+contact      audit      poseNs     3230.3    2255.0    4483.2   98.8%  
+contact      audit      stepNs     2896.5    2764.8    3433.1   24.2%  
+contact      audit      eventsNs    304.0     295.8     367.7   24.3%  
+contact      audit      otherNs      59.1      55.7      85.6   53.7%  
+contact      phase3     tickNs     5724.8    5305.1    7160.0   35.0%  5db7f953
+contact      phase3     poseNs     2737.2    2434.6    3601.0   47.9%  
+contact      phase3     stepNs     2703.3    2524.6    3119.5   23.6%  
+contact      phase3     eventsNs    301.6     255.9     372.2   45.4%  
+contact      phase3     otherNs      54.8      47.4      64.4   35.9%  

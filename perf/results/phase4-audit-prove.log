@@ -1,0 +1,28 @@
+== differential test
+FASTPATH_DIFFERENTIAL ok: 5473096 values compared; contact begins 3394, ends 2975, hits 1564, sensor events 635; shared memory true
+FASTPATH_DIFFERENTIAL ok: 5473096 values compared; contact begins 3394, ends 2975, hits 1564, sensor events 635; shared memory false
+== checksums, scratch adapter
+ok   scratch drift500 11c76fa7
+ok   scratch drift2000 a66a94ee
+ok   scratch drift10000 70623967
+ok   scratch contact 5db7f953
+ok   scratch worlds25x19 a8a0671e
+ok   scratch rest2000 17fc310b
+ok   scratch drive500 fd7cc876
+== checksums, unmodified vecs (embind API)
+ok   unmodified drift500 11c76fa7
+ok   unmodified drift2000 a66a94ee
+ok   unmodified drift10000 70623967
+ok   unmodified contact 5db7f953
+ok   unmodified worlds25x19 a8a0671e
+ok   unmodified rest2000 17fc310b
+ok   unmodified drive500 fd7cc876
+== vecs suites, scratch adapter
+ok   scratch vecs-physics  Tests 536 passed (536)
+ok   scratch vecs-phaser-server  Tests 154 passed (154)
+ok   scratch vecs-phaser  Tests 119 passed (119)
+== vecs suites, unmodified vecs
+ok   unmodified vecs-physics  Tests 536 passed (536)
+ok   unmodified vecs-phaser-server  Tests 154 passed (154)
+ok   unmodified vecs-phaser  Tests 119 passed (119)
+PROOF OK /home/user/audit/builds/fork

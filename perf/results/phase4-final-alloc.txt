@@ -1,0 +1,30 @@
+r0 drift500     stock      tick 60597.1 pose 59416.6 step 528.9 alloc 1891346 0557d658
+r0 drift500     final      tick 1247.4 pose 987 step 190 alloc 203081 0557d658
+r0 drift2000    stock      tick 8881 pose 8522.1 step 296.9 alloc 7502859 afd5924a
+r0 drift2000    final      tick 3450.5 pose 3068.5 step 319.4 alloc 786488 afd5924a
+r0 drift10000   stock      tick 10527.4 pose 10131.5 step 376.7 alloc 37559969 ac22f82f
+r0 drift10000   final      tick 7256.4 pose 6849 step 384.8 alloc 3852521 ac22f82f
+r0 contact      stock      tick 63453.4 pose 58445.8 step 3323.4 alloc 4274198 9bcec695
+r0 contact      final      tick 8141.9 pose 4313.1 step 3404.7 alloc 839948 9bcec695
+r0 worlds25x19  stock      tick 22010 pose 15870.5 step 2363.6 alloc 2104936 ab7528bd
+r0 worlds25x19  final      tick 2984.2 pose 1321.5 step 361.9 alloc 328247 ab7528bd
+r0 rest2000     stock      tick 16450.8 pose 16162.6 step 204 alloc 6611797 17fc310b
+r0 rest2000     final      tick 425.6 pose 295.9 step 104.7 alloc 14485 17fc310b
+r0 drive500     stock      tick 22562.6 pose 16494.6 step 915.3 alloc 2438141 7ef0263f
+r0 drive500     final      tick 2968.5 pose 1811.7 step 511.1 alloc 437130 7ef0263f
+
+scene        variant     metric   median     min       max     spread  checksums
+drift500     stock      allocBytesPerStep 1891346.0 1891346.0 1891346.0    0.0%  0557d658
+drift500     final      allocBytesPerStep 203081.0  203081.0  203081.0    0.0%  0557d658
+drift2000    stock      allocBytesPerStep 7502859.0 7502859.0 7502859.0    0.0%  afd5924a
+drift2000    final      allocBytesPerStep 786488.0  786488.0  786488.0    0.0%  afd5924a
+drift10000   stock      allocBytesPerStep 37559969.0 37559969.0 37559969.0    0.0%  ac22f82f
+drift10000   final      allocBytesPerStep 3852521.0 3852521.0 3852521.0    0.0%  ac22f82f
+contact      stock      allocBytesPerStep 4274198.0 4274198.0 4274198.0    0.0%  9bcec695
+contact      final      allocBytesPerStep 839948.0  839948.0  839948.0    0.0%  9bcec695
+worlds25x19  stock      allocBytesPerStep 2104936.0 2104936.0 2104936.0    0.0%  ab7528bd
+worlds25x19  final      allocBytesPerStep 328247.0  328247.0  328247.0    0.0%  ab7528bd
+rest2000     stock      allocBytesPerStep 6611797.0 6611797.0 6611797.0    0.0%  17fc310b
+rest2000     final      allocBytesPerStep  14485.0   14485.0   14485.0    0.0%  17fc310b
+drive500     stock      allocBytesPerStep 2438141.0 2438141.0 2438141.0    0.0%  7ef0263f
+drive500     final      allocBytesPerStep 437130.0  437130.0  437130.0    0.0%  7ef0263f
