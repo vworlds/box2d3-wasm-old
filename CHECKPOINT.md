@@ -917,9 +917,14 @@ the fork. Ready:
   branch, and `NPM_TOKEN` for npmjs.org);
 - an install-from-GitHub URL in `REPORT.md`.
 
+Reported to VecsMaster on vworlds/vecs#273
+(https://github.com/vworlds/vecs/issues/273#issuecomment-6140182380): version, install line,
+results summary and links. It is marked **for information only, no action**, at the lead's
+request, while the lead reviews.
+
 ### 4.4 Next steps (for whoever continues)
 
-1. Publish (above) and report the version to VecsMaster. The vecs-side adapter change, its
+1. After the lead's review: publish (above), then tell VecsMaster to proceed. The vecs-side adapter change, its
    review and its release happen in vecs, following `docs/vecs-migration.md` and
    `perf/adapter/*.patch`.
 2. Optional: re-run `perf/bench/run.mjs` on the production server type. Speedups depend on the
