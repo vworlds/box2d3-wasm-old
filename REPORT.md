@@ -16,8 +16,9 @@
   vecs's memory-bound ECS work, which that host runs slower.
 - **Simulation results are unchanged.** In every scene, per-step traces of every body's pose and
   velocities are identical to stock, and contact events are identical too. vecs's own benchmark
-  reproduces its checksums (N=500 `11c76fa7`, N=2,000 `a66a94ee`), and the vecs suites pass
-  unchanged, including `motion_accuracy.test.ts`.
+  reproduces its checksums (N=500 `11c76fa7`, N=2,000 `a66a94ee`). The vecs suites pass,
+  including `motion_accuracy.test.ts` (unchanged); two tests that counted embind handles were
+  rewritten to assert the new contract.
 - **How:**
   - a zero-allocation **fast path** of plain wasm exports (`b2x_`) next to the unchanged embind API;
   - a runtime switch for Box2D's **profile timers** (each timed section made a JS call);
@@ -27,8 +28,11 @@
   velocities, event spans, raw per-body calls, timers off. All in
   [docs/vecs-migration.md](docs/vecs-migration.md), with a working reference implementation
   ([perf/adapter/](perf/adapter/)).
-- **What remains:** vecs's own ECS work (45–55% of moving ticks) and Box2D's step. Neither can
-  shrink without changing vecs semantics or simulation results.
+- **What remains:** vecs's own ECS work (45–55% of moving ticks) and Box2D's step.
+  - Box2D's step cannot shrink without changing simulation results.
+  - The ECS work is outside the fork. Making it cheaper needs vecs API or core changes (for
+    example a bulk pose write, or an empty-system fast path); some of these would keep vecs
+    semantics.
 
 ## Deliverables
 
@@ -41,7 +45,7 @@
 | benchmarks, proof kit, raw results, profiles | [perf/](perf/), `perf/results/` |
 | working log (all phases, every round) | [CHECKPOINT.md](CHECKPOINT.md) |
 
-## Final table (audited build, same session)
+## Final tables
 
 Timings are ns per body per step: **copy-out** is the `PhysicsPoseSyncOut` system including
 its deferred flush, **step** is `PhysicsStep`, **tick** is `world.progress` of all worlds. Stock is
@@ -147,7 +151,8 @@ cannot remove".
 - **Per-step traces** (`BENCH_TRACE=1`), stock against final: identical in all seven scenes. The
   build-flag variants were also traced against the previous build.
 - **vecs suites:** `@vworlds/vecs-physics` 536/536, `@vworlds/vecs-phaser-server` 154/154,
-  `@vworlds/vecs-phaser` 119/119, in both setups, every round, and again from a clean checkout.
+  `@vworlds/vecs-phaser` 119/119, in both setups, for every adopted round (the dropped threads
+  round only had its checksums checked before it was reverted), and again from a clean checkout.
   The only test changes are two tests that counted embind handles, rewritten to assert the
   fast-path contract.
 - **Clean-checkout audit:** fresh clone, fresh build, fresh vecs checkouts from the patches;
